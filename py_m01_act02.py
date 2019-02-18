@@ -1,5 +1,4 @@
 # Python Module 01: Activity 02
-from time import sleep
 from iot_gh.IoTGreenhouseService import IoTGreenhouseService
 
 ghs = IoTGreenhouseService()
