@@ -1,4 +1,4 @@
-# Python Module 01: Activity 02
+# Python Module 01: Activity 03
 from time import sleep
 from iot_gh.IoTGreenhouseService import IoTGreenhouseService
 
