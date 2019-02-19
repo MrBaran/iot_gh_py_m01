@@ -6,8 +6,9 @@ ghs = IoTGreenhouseService()
 
 print("IoT Greenhouse - Python Module 01.")
 print("User must activate keys to open greenhouse")
-print("Be sure to position the potentiometer in the middle and the toggle switch to off.")
+print("Position the potentiometer in the middle and set toggle switch to off.")
 print()
+#key 1
 key_num = 1
 print("Activate Key", key_num)
 while ghs.switches.push_button.is_off():
@@ -15,7 +16,7 @@ while ghs.switches.push_button.is_off():
 for i in range(0, key_num):
     ghs.buzzer.beep()
     sleep(.5)
-
+#key 2
 key_num = 2
 initial_pot_val = ghs.analog.pot.get_value()
 new_pot_value = 0
@@ -25,7 +26,7 @@ while new_pot_value <= initial_pot_val + 10:
 for i in range(0, key_num):
     ghs.buzzer.beep()
     sleep(.5)
-
+#key 3 - TODO
 key_num = 3
 initial_light_val = ghs.analog.light.get_value()
 new_light_value = 1024
@@ -35,7 +36,7 @@ while new_light_value > initial_light_val - 10:
 for i in range(0, key_num):
     ghs.buzzer.beep()
     sleep(.5)
-
+#key 4 - TODO
 key_num = 4
 print("Activate Key", key_num)
 while ghs.switches.toggle.is_off():
@@ -43,7 +44,7 @@ while ghs.switches.toggle.is_off():
 for i in range(0, key_num):
     ghs.buzzer.beep()
     sleep(.5)
-
+#key 5 - TODO
 key_num = 5
 current_temp = ghs.temperature.get_outside_temp_C()
 new_temp_value = 0
