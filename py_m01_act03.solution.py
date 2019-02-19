@@ -15,20 +15,20 @@ for i in range(0, key_num):
     ghs.buzzer.beep()
 
 key_num = 2
-initial_pot_val = ghs.analog_service.pot.get_value()
+initial_pot_val = ghs.analog.pot.get_value()
 new_pot_value = 0
 print("Activate Key", key_num)
 while new_pot_value <= initial_pot_val:
-    new_pot_value = ghs.analog_service.pot.get_value()
+    new_pot_value = ghs.analog.pot.get_value()
 for i in range(0, key_num):
     ghs.buzzer.beep()
 
 key_num = 3
-initial_light_val = ghs.analog_service.light.get_value()
+initial_light_val = ghs.analog.light.get_value()
 new_light_value = 1024
 print("Activate Key", key_num)
 while new_light_value > initial_light_val - 100:
-    new_light_value = ghs.analog_service.light.get_value()
+    new_light_value = ghs.analog.light.get_value()
 for i in range(0, key_num):
     ghs.buzzer.beep()
 
