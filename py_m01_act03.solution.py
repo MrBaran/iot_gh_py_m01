@@ -1,4 +1,6 @@
 # Python Module 01: Activity 02
+from iot_gh.IoTGreenhouseService import IoTGreenhouseService
+
 ghs = IoTGreenhouseService()
 
 print("IoT Greenhouse - Python Module 01.")
