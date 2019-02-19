@@ -18,7 +18,7 @@ key_num = 2
 initial_pot_val = ghs.analog.pot.get_value()
 new_pot_value = 0
 print("Activate Key", key_num)
-while new_pot_value <= initial_pot_val:
+while new_pot_value <= initial_pot_val + 10:
     new_pot_value = ghs.analog.pot.get_value()
 for i in range(0, key_num):
     ghs.buzzer.beep()
