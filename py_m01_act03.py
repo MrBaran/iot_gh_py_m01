@@ -16,6 +16,7 @@ while ghs.switches.push_button.is_off():
 for i in range(0, key_num):
     ghs.buzzer.beep()
     sleep(.5)
+
 #key 2
 key_num = 2
 initial_pot_val = ghs.analog.pot.get_value()
