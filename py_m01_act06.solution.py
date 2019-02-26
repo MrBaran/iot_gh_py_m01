@@ -18,7 +18,7 @@ print("Reading temperature and light levels.")
 print("Press and hold push-button to end sampling.")
 while ghs.switches.push_button.is_off():
     t_readings.append(ghs.temperature.get_outside_temp_F())
-    l_readings.append(ghs.analog.light.get_value())
+    l_readings.append(ghs.analog.light.get_value()/10)
     print(".", end="")
     sleep(.5)
     
